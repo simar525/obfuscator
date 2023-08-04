@@ -104,7 +104,7 @@
   },
   "homepage": "https://obfuscator.io/",
   "scripts": {
-    "start": "yarn run watch",
+    "start": "node server.js",
     "webpack:prod": "webpack --config ./webpack/webpack.node.config.js --config ./webpack/webpack.browser.config.js --mode production",
     "build": "yarn run webpack:prod && yarn run eslint && yarn test",
     "build:typings": "rm -rf ./typings && tsc --project src/tsconfig.typings.json",
